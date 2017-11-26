@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/testbg"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/switchLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enabled"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:text="Custom Color"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_border"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/xml_border" />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/xml_border" />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/xml_border" />
+
+        <Button
+            android:id="@+id/yellowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/xml_border" />
+
+        <Button
+            android:id="@+id/purpleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/xml_border" />
+
+        <Button
+            android:id="@+id/aquaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/xml_border" />
+
+        <Button
+            android:id="@+id/whiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/xml_border" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/patternText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:text="Custom Pattern"
+        android:textColor="@android:color/background_light" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_border"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/fixButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_border"
+                android:padding="5dp"
+                android:text="FIX"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/breathButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_border"
+                android:padding="5dp"
+                android:text="BREATH"
+                android:textColor="@android:color/background_light" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/slowButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_border"
+                android:padding="5dp"
+                android:text="TWINCLE/SLOW"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/fastButton"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_border"
+                android:padding="5dp"
+                android:text="TWINCLE/FAST"
+                android:textColor="@android:color/background_light" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/shakingText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:text="Shaking Count"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/numberText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_border"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fullText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_border"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:text="0.0kcal"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:text="Progress"
+        android:textColor="@android:color/background_light" />
+
+    <ProgressBar
+        android:id="@+id/pgBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/custom_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+</LinearLayout>
+
+
+</FrameLayout>
+
+
+
